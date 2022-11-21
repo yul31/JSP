@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="jspFormPro.jsp" method="post">
+<fieldset>
+<legend>사용자 선택</legend>
+이름 <input type="text" name="name"><br>
+나이 <input type="text" name="age"><br>
+성별 <input type="radio" name="gender" value="f">여자
+<input type="radio" name="gender" value="m">남자<br>
+좋아하는 음식<br>
+<select name="food" multiple size="4"> <!-- multiple:복수선택,size="~": ~개만큼 보임 -->
+<option value="김치찌개">김치찌개			<!-- ctrl+클릭하면 복수선택 가능 -->
+<option value="비빔밥">비빔밥
+<option value="김밥">김밥
+<option value="칼국수">칼국수
+</select><br>
+관심분야
+<input type="checkbox" name="subject" value="웹프로그램">웹프로그램
+<input type="checkbox" name="subject" value="네트워크관리">네트워크관리
+<input type="checkbox" name="subject" value="보안">보안
+<input type="checkbox" name="subject" value="게임프로그램">게임프로그램
+<input type="checkbox" name="subject" value="데이터분석">데이터분석
+<br>
+<input type="submit" value="제출">
+</fieldset>
+</form>
+
+</body>
+</html>
